@@ -9,15 +9,22 @@
 </head>
 
 <body>
-    <!-- <audio src="./music.mp3" controls></audio>-->
-    <audio src="./music.mp3" autoplay="true" loop="loop"></audio>
+    <!-- <audio src="./music.mp3" loop="loop" autoplay="autoplay"></audio>-->
+    <!-- <audio src="./music.mp3" autoplay="true" loop="loop"></audio>-->
     <!-- <embed src="./music.mp3" loop="true" autostart="true" width="2" height="0">-->
+    <audio controls="controls" loop="loop" autoplay="autoplay">
+      <source src="./music.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
     <div id="back">
         <div class="mask"></div>
         <!-- 设置展示的图片，github pages不能有后台程序只能一条一条手动添加了 囧 -->
         <div id="carousel"  class="carousel slide carousel-fade carousel-position">
             <div class="carousel-inner" style="height: 100%;" id="background">
                 <div class="item active" style="height: 100%;">
+                    <div style="height: 100%;background-image: url(./img/start.jpeg) ;background-size: cover;"></div>
+                </div>
+                <div class="item" style="height: 100%;">
                     <div style="height: 100%;background:url(./img/1.jpeg);background-size: cover;"></div>
                 </div>
                 <div class="item" style="height: 100%;">
@@ -66,7 +73,28 @@
                     <div style="width: 100%;height: 100%;background-image: url(./img/16.jpg);background-size: cover;"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/end.png);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/17.png);background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/18.JPG);background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/19.png);background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/20.JPG);background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/21.JPG);background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/22.JPG);background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/23.JPG);background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/end.jpeg);background-size: cover;"></div>
                 </div>
             </div>
         </div>
@@ -110,6 +138,7 @@
 
         //设置每一张图片对应的文字
         var says = new Array(
+            "这里，记录下我们的点滴时光，成为一生的珍藏",
             "初次约会，把酒送祝东风，真可谓 三里清风，娇慵问，邂逅曦光",
             "暧昧的鞋子和晶莹闪烁的酒滴，后人赞道：尘世繁华，低眸顾，酒入柔肠。今晚注定有不凡发生",
             "和睇睇在一起后一同做的大餐，牛仔骨真不戳，大白菜清新脱俗",
@@ -126,7 +155,14 @@
             "来到了finger lake酒庄，是homebrew的啤酒，在酿酒桶旁边拍下好酒，我们也要一起好久~",
             "快要回去啦，有诗经云：噫兮还兮，驾言徂行，我心悠扬",
             "4月3号，快要睡啦，来一波亲亲吧",
-            "时间不停，爱你不止，携子之手，白头偕老"
+            "睇睇送来的打针营养餐，太丰盛了吧！！！从此锅锅就负责给睇睇打下手了", 
+            "Genesy River Park, 一个巨大的盆地，却也载不下我们的爱情", 
+            "重蹈我跑至最远的地方后，再延伸，冷风中夜月下携手漫步RIT",
+            "家中无处安放的手，不经意间拼凑出爱你的形状",
+            "三岁的孩子喜欢磨牙，纵有一身铮铮铁骨，也经不住仙女的吮吸（戴老板：习惯了）",
+            "秀色可惨的菊花衣服，纤纤细手~",
+            "highland park横芳遍野，簌簌落英纵春风，红裳配绿衣，绿叶衬芳红",
+            "时间不停，爱你不止，睇睇生日快乐！"
         );
 
 
